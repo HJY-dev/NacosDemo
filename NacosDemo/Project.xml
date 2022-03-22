@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NacosDemo</name>
+    </assembly>
+    <members>
+        <member name="M:NacosDemo.Controllers.NacosController.GetStatus">
+            <summary>
+            获取Nacos 状态
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NacosDemo.Controllers.NacosController.Register">
+            <summary>
+            服务上线
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NacosDemo.Controllers.NacosController.Deregister">
+            <summary>
+            服务下线
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NacosDemo.Controllers.NacosController.Subscribe">
+            <summary>
+            服务订阅
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NacosDemo.Controllers.NacosController.Unsubscribe">
+            <summary>
+            取消服务订阅
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NacosDemo.Controllers.NacosController.PublishConfig">
+            <summary>
+            发布配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NacosDemo.Controllers.NacosController.GetConfig">
+            <summary>
+            获取配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NacosDemo.Controllers.NacosController.RemoveConfig">
+            <summary>
+            删除配置
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:NacosDemo.Controllers.NacosController.ListenConfig">
+            <summary>
+            监听配置变更
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:NacosDemo.Extensions.NacosSetup">
+            <summary>
+            Nacos
+            </summary>
+        </member>
+        <member name="P:NacosDemo.ApiJsonResult`1.Code">
+            <summary>
+            错误代码
+            </summary>
+        </member>
+        <member name="P:NacosDemo.ApiJsonResult`1.Message">
+            <summary>
+            错误信息 
+            </summary>
+        </member>
+        <member name="P:NacosDemo.ApiJsonResult`1.Data">
+            <summary>
+            具体数据
+            </summary>
+        </member>
+        <member name="M:NacosDemo.ConsoleHelper.WriteColorLine(System.String,System.ConsoleColor)">
+            <summary>
+            在控制台输出
+            </summary>
+            <param name="str">文本</param>
+            <param name="color">前颜色</param>
+        </member>
+        <member name="M:NacosDemo.ConsoleHelper.WriteErrorLine(System.String,System.ConsoleColor)">
+            <summary>
+            打印错误信息
+            </summary>
+            <param name="str">待打印的字符串</param>
+            <param name="color">想要打印的颜色</param>
+        </member>
+        <member name="M:NacosDemo.ConsoleHelper.WriteWarningLine(System.String,System.ConsoleColor)">
+            <summary>
+            打印警告信息
+            </summary>
+            <param name="str">待打印的字符串</param>
+            <param name="color">想要打印的颜色</param>
+        </member>
+        <member name="M:NacosDemo.ConsoleHelper.WriteInfoLine(System.String,System.ConsoleColor)">
+            <summary>
+            打印正常信息
+            </summary>
+            <param name="str">待打印的字符串</param>
+            <param name="color">想要打印的颜色</param>
+        </member>
+        <member name="M:NacosDemo.ConsoleHelper.WriteSuccessLine(System.String,System.ConsoleColor)">
+            <summary>
+            打印成功的信息
+            </summary>
+            <param name="str">待打印的字符串</param>
+            <param name="color">想要打印的颜色</param>
+        </member>
+        <member name="M:NacosDemo.IpHelper.GetCurrentIp(System.String)">
+            <summary>
+            获取当前IP地址
+            </summary>
+            <param name="preferredNetworks"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NacosDemo.JsonConfigUtils">
+            <summary>
+            Json 配置文件通用类
+            </summary>
+        </member>
+        <member name="F:NacosDemo.JsonConfigUtils.__Lock__">
+            <summary>
+            锁
+            </summary>
+        </member>
+        <member name="M:NacosDemo.JsonConfigUtils.GetAppSettings``1(Microsoft.Extensions.Configuration.IConfiguration,System.String,System.String)">
+            <summary>
+            读取配置文件的信息
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fileName">要读取json的名称</param>
+            <param name="key">要读取的json节点名称</param>
+            <returns></returns>
+        </member>
+        <member name="T:NacosDemo.IConfigurationManager">
+            <summary>
+            配置文件管理器
+            </summary>
+        </member>
+        <member name="T:NacosDemo.ConfigurationManager">
+            <summary>
+            配置读取  根据环境变量
+            </summary>
+        </member>
+        <member name="F:NacosDemo.JsonConfigSettings.AppSettingsFileName">
+            <summary>
+            配置文件名称常量
+            </summary>
+        </member>
+        <member name="M:NacosDemo.JsonConfigSettings.GetAppSettingsConfigName">
+            <summary>
+            根据环境变量定向配置文件名称
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosServerAddresses">
+            <summary>
+            获取Nacos配置
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosDefaultTimeOut">
+            <summary>
+            获取Nacos配置
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosNamespace">
+            <summary>
+            获取Nacos配置
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosServiceName">
+            <summary>
+            获取Nacos配置
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.ListenInterval">
+            <summary>
+            获取Nacos配置
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosIp">
+            <summary>
+            获取Nacos配置
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosPort">
+            <summary>
+            获取Nacos配置
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosRegisterEnabled">
+            <summary>
+            获取Nacos配置
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosMetadata">
+            <summary>
+            获取Nacos配置
+            </summary>
+        </member>
+        <member name="T:NacosDemo.JsonConfigSettings.NacosConfigDTO">
+            <summary>
+            Nacos配置实体
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosConfigDTO.ServerAddresses">
+            <summary>
+            服务IP地址
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosConfigDTO.DefaultTimeOut">
+            <summary>
+            默认超时时间
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosConfigDTO.ListenInterval">
+            <summary>
+            监听间隔
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosConfigDTO.Namespace">
+            <summary>
+            服务命名空间
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosConfigDTO.ServiceName">
+            <summary>
+            服务名称
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosConfigDTO.Ip">
+            <summary>
+            IP地址
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosConfigDTO.Port">
+            <summary>
+            端口
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosConfigDTO.RegisterEnabled">
+            <summary>
+            服务命名空间
+            </summary>
+        </member>
+        <member name="P:NacosDemo.JsonConfigSettings.NacosConfigDTO.Metadata">
+            <summary>
+            其他配置
+            </summary>
+        </member>
+        <member name="T:NacosDemo.NacosConfig.NacosListenConfigurationTask">
+            <summary>
+            Nacos配置文件变更事件
+            </summary>
+        </member>
+        <member name="F:NacosDemo.NacosConfig.NacosListenConfigurationTask.nacosConfigListener">
+            <summary>
+            Nacos 配置文件监听事件
+            </summary>
+        </member>
+        <member name="M:NacosDemo.NacosConfig.NacosListenConfigurationTask.#ctor(Nacos.V2.INacosConfigService,System.IServiceProvider)">
+            <summary>
+            重载方法
+            </summary>
+            <param name="configClient"></param>
+            <param name="serviceProvider"></param>
+        </member>
+        <member name="M:NacosDemo.NacosConfig.NacosListenConfigurationTask.ExecuteAsync(System.Threading.CancellationToken)">
+            <summary>
+            执行
+            </summary>
+            <param name="stoppingToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:NacosDemo.NacosConfig.NacosListenConfigurationTask.StopAsync(System.Threading.CancellationToken)">
+            <summary>
+            停止
+            </summary>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NacosDemo.NacosConfig.NacosConfigListener">
+            <summary>
+            配置监听事件
+            </summary>
+        </member>
+        <member name="M:NacosDemo.NacosConfig.NacosConfigListener.ReceiveConfigInfo(System.String)">
+            <summary>
+            收到配置文件变更
+            </summary>
+            <param name="configInfo"></param>
+        </member>
+        <member name="T:NacosDemo.NacosConfig.NacosListenNamingTask">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:NacosDemo.NacosConfig.NacosListenNamingTask.eventListener">
+            <summary>
+            监听事件
+            </summary>
+        </member>
+        <member name="M:NacosDemo.NacosConfig.NacosListenNamingTask.#ctor(Nacos.V2.INacosNamingService)">
+            <summary>
+            
+            </summary>
+            <param name="nacosNamingService"></param>
+        </member>
+        <member name="M:NacosDemo.NacosConfig.NacosListenNamingTask.ExecuteAsync(System.Threading.CancellationToken)">
+            <summary>
+            订阅服务变化 
+            </summary>
+            <param name="stoppingToken"></param>
+            <returns></returns>
+        </member>
+        <member name="T:NacosDemo.NacosConfig.NamingServiceEventListener">
+            <summary>
+            服务变更事件监听
+            </summary>
+        </member>
+        <member name="M:NacosDemo.NacosConfig.NamingServiceEventListener.OnEvent(Nacos.V2.IEvent)">
+            <summary>
+            监听事件
+            </summary>
+            <param name="event"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

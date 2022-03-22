@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NacosDemo", "NacosDemo.csproj", "{3332A928-360D-454B-BDAA-8258DB78EBAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3332A928-360D-454B-BDAA-8258DB78EBAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3332A928-360D-454B-BDAA-8258DB78EBAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3332A928-360D-454B-BDAA-8258DB78EBAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3332A928-360D-454B-BDAA-8258DB78EBAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38CBAAA1-27EB-47D7-B24F-A846054460FA}
+	EndGlobalSection
+EndGlobal
